@@ -11,7 +11,7 @@
     "outDir": "build/typescript/types",
     "strict": true,
     "target": "esnext",
-    "rootDirs": ["build/css", "src"]
+    "rootDirs": ["build/postcss", "src"]
   },
   "include": ["src/**/*"]
 }
