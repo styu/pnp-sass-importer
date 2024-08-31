@@ -1,0 +1,48 @@
+{
+  "name": "@example/postcss",
+  "main": "./dist/main/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/main/index.js"
+    }
+  },
+  "scripts": {
+    "assemble": "echo 'Done'",
+    "assemble-prepare": "mkdir -p dist/main && mkdir -p dist/types",
+    "assemble-postcss-main": "cp build/postcss/**/*.{css*,js,js*} dist/main",
+    "assemble-postcss-types": "cp build/postcss/**/*.d.ts* dist/types",
+    "assemble-typescript-main": "cp build/typescript/main/**/*.js* dist/main",
+    "assemble-typescript-types": "cp build/typescript/types/**/*.d.ts* dist/types",
+    "build": "echo 'Done'",
+    "build-postcss": "postcss src/**/*.scss --base src --dir build/postcss --ext css --config .",
+    "build-transpile": "swc ./src --config-file .swcrc --out-dir build/typescript/main --strip-leading-paths",
+    "build-typecheck": "tsc -p tsconfig.json",
+    "lint": "prettier --check 'src/**/*.{ts,scss}*'",
+    "lint-fix": "prettier --write 'src/**/*.{ts,scss}*'",
+    "clean": "rm -rf dist && rm -rf build"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "~5.12.0",
+    "@example/theme": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.1.1",
+    "@example/prettier-config-default": "workspace:*",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.5",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.18",
+    "pnp-sass-importer": "workspace:*",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "postcss-typesafe-css-modules": "^0.1.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "~5.5.3"
+  }
+}

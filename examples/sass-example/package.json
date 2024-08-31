@@ -1,0 +1,46 @@
+{
+  "name": "@example/sass",
+  "main": "./dist/main/index.js",
+  "types": "./dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/main/index.js"
+    }
+  },
+  "scripts": {
+    "assemble": "echo 'Done'",
+    "assemble-prepare": "mkdir -p dist/main && mkdir -p dist/types",
+    "assemble-css-main": "cp build/css/**/*.css* dist/main",
+    "assemble-typescript-main": "cp build/typescript/main/**/*.js* dist/main",
+    "assemble-typescript-types": "cp build/typescript/types/**/*.d.ts* dist/types",
+    "build": "echo 'Done'",
+    "build-css": "node sass-compile.mjs ./src",
+    "build-transpile": "swc ./src --config-file .swcrc --out-dir build/typescript/main --strip-leading-paths",
+    "build-typecheck": "tsc -p tsconfig.json",
+    "lint": "prettier --check 'src/**/*.{ts,scss}*'",
+    "lint-fix": "prettier --write 'src/**/*.{ts,scss}*'",
+    "clean": "rm -rf dist && rm -rf build"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "~5.12.0",
+    "@example/theme": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@example/prettier-config-default": "workspace:*",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.18",
+    "fs-extra": "^11.2.0",
+    "pnp-sass-importer": "workspace:*",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "~5.5.3"
+  }
+}

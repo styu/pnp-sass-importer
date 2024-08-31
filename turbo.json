@@ -1,0 +1,85 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build-transpile": {
+      "outputs": ["build/typescript/main/**"],
+      "dependsOn": ["^build", "build-transpile-esm", "build-transpile-cjs"]
+    },
+    "build-transpile-esm": {
+      "outputs": ["build/typescript/esm/**"],
+      "dependsOn": ["^build"]
+    },
+    "build-transpile-cjs": {
+      "outputs": ["build/typescript/cjs/**"],
+      "dependsOn": ["^build"]
+    },
+    "build-typecheck": {
+      "outputs": ["build/typescript/types/**"],
+      "dependsOn": ["^build", "build-postcss"]
+    },
+    "build-postcss": {
+      "outputs": ["build/postcss/**"],
+      "dependsOn": ["^build"]
+    },
+    "build-css": {
+      "outputs": ["build/css/**"],
+      "dependsOn": ["^build"]
+    },
+    "build": {
+      "dependsOn": [
+        "^build",
+        "assemble-prepare",
+        "assemble-css-main",
+        "assemble-postcss-main",
+        "assemble-postcss-types",
+        "assemble-typescript-main",
+        "assemble-typescript-types"
+      ]
+    },
+    "assemble-css-main": {
+      "dependsOn": ["assemble-prepare", "build-css"]
+    },
+    "assemble-postcss-main": {
+      "dependsOn": ["assemble-prepare", "build-postcss"]
+    },
+    "assemble-postcss-types": {
+      "dependsOn": ["assemble-prepare", "build-postcss"]
+    },
+    "assemble-typescript-main": {
+      "outputs": ["dist/main/**/*.js*"],
+      "dependsOn": [
+        "assemble-prepare",
+        "build-transpile",
+        "assemble-typescript-esm",
+        "assemble-typescript-cjs"
+      ]
+    },
+    "assemble-typescript-esm": {
+      "outputs": ["dist/esm/**/*.js*"],
+      "dependsOn": ["assemble-prepare", "build-transpile-esm"]
+    },
+    "assemble-typescript-cjs": {
+      "outputs": ["dist/cjs/**/*.js*"],
+      "dependsOn": ["assemble-prepare", "build-transpile-cjs"]
+    },
+    "assemble-typescript-types": {
+      "outputs": ["dist/types/**/*.d.ts*"],
+      "dependsOn": ["assemble-prepare", "build-typecheck"]
+    },
+    "assemble-prepare": {
+      "cache": false
+    },
+    "lint": {},
+    "lint-fix": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    }
+  }
+}

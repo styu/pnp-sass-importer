@@ -1,0 +1,49 @@
+{
+  "name": "pnp-sass-importer",
+  "version": "0.0.0",
+  "main": "./dist/cjs/importer.js",
+  "module": "./dist/esm/importer.js",
+  "types": "./dist/types/importer.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/importer.d.ts",
+      "import": "./dist/esm/importer.js",
+      "default": "./dist/cjs/importer.js"
+    },
+    "./legacy": {
+      "types": "./dist/types/legacyImporter.d.ts",
+      "import": "./dist/esm/legacyImporter.js",
+      "default": "./dist/cjs/legacyImporter.js"
+    }
+  },
+  "scripts": {
+    "assemble": "echo 'Done'",
+    "assemble-prepare": "mkdir -p dist/esm && mkdir -p dist/types && mkdir -p dist/cjs",
+    "assemble-typescript-main": "echo 'Done'",
+    "assemble-typescript-esm": "cp build/typescript/esm/**/*.js* dist/esm",
+    "assemble-typescript-cjs": "cp build/typescript/cjs/**/*.js* dist/cjs",
+    "assemble-typescript-types": "cp build/typescript/types/**/*.d.ts* dist/types",
+    "build": "echo 'Done'",
+    "build-transpile": "echo 'Done'",
+    "build-transpile-esm": "swc ./src --config-file esm.swcrc --out-dir build/typescript/esm --strip-leading-paths",
+    "build-transpile-cjs": "swc ./src --config-file cjs.swcrc --out-dir build/typescript/cjs --strip-leading-paths",
+    "build-typecheck": "tsc -p tsconfig.json",
+    "lint": "prettier --check 'src/**/*.{ts,scss}*'",
+    "lint-fix": "prettier --write 'src/**/*.{ts,scss}*'",
+    "clean": "rm -rf dist && rm -rf build"
+  },
+  "dependencies": {
+    "@yarnpkg/fslib": "~3.1.0",
+    "@yarnpkg/libzip": "~3.1.0",
+    "sass": "~1.77.8"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.5",
+    "@types/node": "^20.14.11",
+    "@types/pnpapi": "^0.0.5",
+    "prettier": "^3.3.3",
+    "typescript": "~5.5.3"
+  }
+}

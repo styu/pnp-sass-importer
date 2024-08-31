@@ -1,0 +1,9 @@
+{
+  "name": "@example/prettier-config-default",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}
