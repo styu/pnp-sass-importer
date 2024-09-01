@@ -1,5 +1,11 @@
 # pnp-sass-importer
 
+## 0.2.1
+
+### Patch Changes
+
+-   2264a1e: Add license field to package.json
+
 ## 0.2.0
 
 ### Minor Changes
