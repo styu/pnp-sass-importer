@@ -7,7 +7,8 @@
     }
   },
   "module": {
-    "type": "commonjs"
+    "type": "commonjs",
+    "strict": true
   },
   "sourceMaps": true,
   "inlineSourcesContent": false

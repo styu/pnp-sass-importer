@@ -1,13 +1,14 @@
 {
+  "$schema": "https://swc.rs/schema.json",
   "jsc": {
     "parser": {
       "syntax": "typescript",
-      "jsx": true,
-    },
+      "jsx": true
+    }
   },
   "module": {
-    "type": "commonjs",
+    "type": "commonjs"
   },
   "sourceMaps": true,
-  "inlineSourcesContent": false,
+  "inlineSourcesContent": false
 }

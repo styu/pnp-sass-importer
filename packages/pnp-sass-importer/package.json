@@ -2,18 +2,17 @@
   "name": "pnp-sass-importer",
   "version": "0.1.0",
   "main": "./dist/cjs/importer.js",
-  "module": "./dist/esm/importer.js",
+  "module": "./dist/esm/importer.mjs",
   "types": "./dist/types/importer.d.ts",
-  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/types/importer.d.ts",
-      "import": "./dist/esm/importer.js",
+      "import": "./dist/esm/importer.mjs",
       "default": "./dist/cjs/importer.js"
     },
     "./legacy": {
       "types": "./dist/types/legacyImporter.d.ts",
-      "import": "./dist/esm/legacyImporter.js",
+      "import": "./dist/esm/legacyImporter.mjs",
       "default": "./dist/cjs/legacyImporter.js"
     }
   },
@@ -21,12 +20,12 @@
     "assemble": "echo 'Done'",
     "assemble-prepare": "mkdir -p dist/esm && mkdir -p dist/types && mkdir -p dist/cjs",
     "assemble-typescript-main": "echo 'Done'",
-    "assemble-typescript-esm": "cp build/typescript/esm/**/*.js* dist/esm",
+    "assemble-typescript-esm": "cp build/typescript/esm/**/*.mjs* dist/esm",
     "assemble-typescript-cjs": "cp build/typescript/cjs/**/*.js* dist/cjs",
     "assemble-typescript-types": "cp build/typescript/types/**/*.d.ts* dist/types",
     "build": "echo 'Done'",
     "build-transpile": "echo 'Done'",
-    "build-transpile-esm": "swc ./src --config-file esm.swcrc --out-dir build/typescript/esm --strip-leading-paths",
+    "build-transpile-esm": "swc ./src --config-file esm.swcrc --out-dir build/typescript/esm --strip-leading-paths --out-file-extension mjs",
     "build-transpile-cjs": "swc ./src --config-file cjs.swcrc --out-dir build/typescript/cjs --strip-leading-paths",
     "build-typecheck": "tsc -p tsconfig.json",
     "lint": "prettier --check 'src/**/*.{ts,scss}*'",
@@ -52,5 +51,17 @@
     "README.md",
     "CHANGELOG.md",
     "package.json"
-  ]
+  ],
+  "keywords": [
+    "yarn",
+    "pnp",
+    "sass",
+    "importer",
+    "@use",
+    "@import"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styu/pnp-sass-importer.git"
+  }
 }

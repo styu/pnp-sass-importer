@@ -1,0 +1,10 @@
+@use "@example/theme" as theme;
+@use "@blueprintjs/core/lib/scss/variables" as bp;
+
+.header {
+  color: theme.$secondary-color;
+  display: flex;
+  font-family: bp.$pt-font-family;
+  justify-content: space-between;
+  max-width: theme.$page-width;
+}

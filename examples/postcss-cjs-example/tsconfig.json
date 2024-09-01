@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "build/typescript/types",
+    "strict": true,
+    "target": "esnext",
+    "rootDirs": ["build/postcss", "src"]
+  },
+  "include": ["src/**/*"]
+}
