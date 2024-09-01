@@ -45,5 +45,12 @@
     "@types/pnpapi": "^0.0.5",
     "prettier": "^3.3.3",
     "typescript": "~5.5.3"
-  }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "package.json"
+  ]
 }
