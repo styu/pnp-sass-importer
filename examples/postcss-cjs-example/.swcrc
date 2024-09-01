@@ -1,5 +1,4 @@
 {
-  "$schema": "https://swc.rs/schema.json",
   "jsc": {
     "parser": {
       "syntax": "typescript",
@@ -7,7 +6,8 @@
     }
   },
   "module": {
-    "type": "commonjs"
+    "type": "commonjs",
+    "strict": true
   },
   "sourceMaps": true,
   "inlineSourcesContent": false

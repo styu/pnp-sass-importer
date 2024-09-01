@@ -337,6 +337,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@example/postcss-cjs@workspace:examples/postcss-cjs-example":
+  version: 0.0.0-use.local
+  resolution: "@example/postcss-cjs@workspace:examples/postcss-cjs-example"
+  dependencies:
+    "@blueprintjs/core": "npm:~5.12.0"
+    "@csstools/postcss-sass": "npm:^5.1.1"
+    "@example/prettier-config-default": "workspace:*"
+    "@example/theme": "workspace:*"
+    "@swc/cli": "npm:^0.4.0"
+    "@swc/core": "npm:^1.7.5"
+    "@types/react": "npm:^18.2.61"
+    "@types/react-dom": "npm:^18.2.18"
+    pnp-sass-importer: "workspace:*"
+    postcss: "npm:^8.4.40"
+    postcss-cli: "npm:^11.0.0"
+    postcss-scss: "npm:^4.0.9"
+    postcss-typesafe-css-modules: "npm:^0.3.0"
+    prettier: "npm:^3.3.3"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    sass: "npm:^1.77.8"
+    typescript: "npm:~5.5.3"
+  languageName: unknown
+  linkType: soft
+
 "@example/postcss@workspace:examples/postcss-example":
   version: 0.0.0-use.local
   resolution: "@example/postcss@workspace:examples/postcss-example"
@@ -353,7 +378,7 @@ __metadata:
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.1.2"
+    postcss-typesafe-css-modules: "npm:^0.3.0"
     prettier: "npm:^3.3.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -404,7 +429,7 @@ __metadata:
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.1.2"
+    postcss-typesafe-css-modules: "npm:^0.3.0"
     sass: "npm:^1.77.8"
     typescript: "npm:~5.5.3"
   languageName: unknown
@@ -3045,9 +3070,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-typesafe-css-modules@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "postcss-typesafe-css-modules@npm:0.1.2"
+"postcss-typesafe-css-modules@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "postcss-typesafe-css-modules@npm:0.3.0"
   dependencies:
     fs-extra: "npm:^11.2.0"
     lines-and-columns: "npm:^2.0.4"
@@ -3055,7 +3080,7 @@ __metadata:
     source-map: "npm:^0.7.4"
   peerDependencies:
     postcss: ^8.0.0
-  checksum: 10c0/aea1774830ad8026d6cd79ab21e3bdda04b061d70410fd7ed4dd73dd06b330f6d335a4d672564cff232a9dfdb4d66cc9387cde57ae37590afbe8afd57a7fb1a0
+  checksum: 10c0/bee846287ec337675f840154dc041673ec14cdda56ab7a70db1ae364302239439edbe17f02742575455743e98ecad9d36627ef14266894250217db2f7ee88665
   languageName: node
   linkType: hard
 
