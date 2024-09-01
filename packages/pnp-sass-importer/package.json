@@ -1,6 +1,6 @@
 {
   "name": "pnp-sass-importer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./dist/cjs/importer.js",
   "module": "./dist/esm/importer.mjs",
   "types": "./dist/types/importer.d.ts",
