@@ -1,5 +1,6 @@
 {
   "name": "@example/postcss",
+  "private": true,
   "main": "./dist/main/index.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
