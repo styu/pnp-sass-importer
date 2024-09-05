@@ -1,8 +1,8 @@
 import { PosixFS } from "@yarnpkg/fslib";
 import libzip, { ZipOpenFS } from "@yarnpkg/libzip";
 import { Importer } from "sass";
-import pnpapi from "pnpapi";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
 
 /**
  *
@@ -11,7 +11,37 @@ import { fileURLToPath } from "node:url";
  */
 export default (dirname: string) => {
     const importer: Importer = {
-        canonicalize: (url, _context) => {
+        canonicalize: async (url, _context) => {
+            let pnpapi;
+            try {
+                // If this plugin is not actually run in a PnP context (e.g. nodeLinker is set to node-modules),
+                // this import statement will throw. In that scenario, this importer is actually not necessary
+                // because Sass's --pkg-importer functionality will have node_modules to traverse
+                pnpapi = await import("pnpapi");
+            } catch (error) {
+                console.log(
+                    "pnpapi not found, pnp-sass-importer is not needed outside of a PnP context. Using require.resolve instead",
+                );
+
+                const require = createRequire(dirname);
+                let res: string | null = null;
+                try {
+                    res = require.resolve(url, {
+                        paths: [dirname],
+                    });
+                } catch (error) {
+                    if (!url.endsWith(".scss")) {
+                        res = require.resolve(url + ".scss", {
+                            paths: [dirname],
+                        });
+                    }
+                }
+                // Can't find the module, fallback to the original URL
+                if (res == null) {
+                    return null;
+                }
+                return new URL(`file:///${res}`);
+            }
             let res: string | null = null;
             try {
                 res = pnpapi.resolveRequest(url, dirname);
