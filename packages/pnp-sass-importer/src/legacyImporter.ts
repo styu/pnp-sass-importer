@@ -9,8 +9,8 @@ import { createRequire } from "node:module";
 export function legacyImporter(dirname: string) {
     const importer: LegacyImporter = async (url, _prev, done) => {
         // If this plugin is not actually run in a PnP context (e.g. nodeLinker is set to node-modules),
-        // this import statement will throw. In that scenario, this importer is actually not necessary
-        // because Sass's --pkg-importer functionality will have node_modules to traverse
+        // this import statement will throw. In that scenario, we fallback to require.resolve because
+        // there will be node_modules to traverse
         import("pnpapi")
             .then(pnpapi => {
                 let res: string | null = null;

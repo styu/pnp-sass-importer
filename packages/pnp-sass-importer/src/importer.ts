@@ -15,8 +15,8 @@ export default (dirname: string) => {
             let pnpapi;
             try {
                 // If this plugin is not actually run in a PnP context (e.g. nodeLinker is set to node-modules),
-                // this import statement will throw. In that scenario, this importer is actually not necessary
-                // because Sass's --pkg-importer functionality will have node_modules to traverse
+                // this import statement will throw. In that scenario, we fallback to require.resolve because
+                // there will be node_modules to traverse
                 pnpapi = await import("pnpapi");
             } catch (error) {
                 console.log(
@@ -36,7 +36,6 @@ export default (dirname: string) => {
                         });
                     }
                 }
-                // Can't find the module, fallback to the original URL
                 if (res == null) {
                     return null;
                 }
