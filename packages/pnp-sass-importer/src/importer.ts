@@ -17,7 +17,7 @@ export default (dirname: string) => {
                 // If this plugin is not actually run in a PnP context (e.g. nodeLinker is set to node-modules),
                 // this import statement will throw. In that scenario, we fallback to require.resolve because
                 // there will be node_modules to traverse
-                pnpapi = await import("pnpapi");
+                pnpapi = (await import("pnpapi")).default;
             } catch (error) {
                 console.log(
                     "pnpapi not found, pnp-sass-importer is not needed outside of a PnP context. Using require.resolve instead",
@@ -41,6 +41,7 @@ export default (dirname: string) => {
                 }
                 return new URL(`file:///${res}`);
             }
+
             let res: string | null = null;
             try {
                 res = pnpapi.resolveRequest(url, dirname);

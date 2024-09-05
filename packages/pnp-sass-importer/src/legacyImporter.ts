@@ -12,7 +12,7 @@ export function legacyImporter(dirname: string) {
         // this import statement will throw. In that scenario, we fallback to require.resolve because
         // there will be node_modules to traverse
         import("pnpapi")
-            .then(pnpapi => {
+            .then(({ default: pnpapi }) => {
                 let res: string | null = null;
                 try {
                     res = pnpapi.resolveRequest(url, dirname);
