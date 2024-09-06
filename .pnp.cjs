@@ -524,7 +524,7 @@ const RAW_RUNTIME_STATE =
           ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.4.0"],\
           ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.7.22"],\
           ["@types/fs-extra", "npm:11.0.4"],\
-          ["@types/node", "npm:20.16.2"],\
+          ["@types/node", "npm:22.5.4"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["fs-extra", "npm:11.2.0"],\
@@ -984,18 +984,18 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.16.2", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.2-fa541092c6-74fac185db.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:20.16.2"],\
-          ["undici-types", "npm:6.19.8"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:22.5.1", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-22.5.1-684f129d7d-35373176d8.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:22.5.1"],\
+          ["undici-types", "npm:6.19.8"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:22.5.4", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.5.4-50cd3ae186-b445daa7ee.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:22.5.4"],\
           ["undici-types", "npm:6.19.8"]\
         ],\
         "linkType": "HARD"\
@@ -3347,7 +3347,7 @@ const RAW_RUNTIME_STATE =
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
           ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.4.0"],\
           ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.7.22"],\
-          ["@types/node", "npm:20.16.2"],\
+          ["@types/node", "npm:22.5.4"],\
           ["@types/pnpapi", "npm:0.0.5"],\
           ["@yarnpkg/fslib", "npm:3.1.0"],\
           ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0"],\

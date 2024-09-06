@@ -405,7 +405,7 @@ __metadata:
     "@swc/cli": "npm:^0.4.0"
     "@swc/core": "npm:^1.7.5"
     "@types/fs-extra": "npm:^11.0.4"
-    "@types/node": "npm:^20.10.5"
+    "@types/node": "npm:^22.5.4"
     "@types/react": "npm:^18.2.61"
     "@types/react-dom": "npm:^18.2.18"
     fs-extra: "npm:^11.2.0"
@@ -813,12 +813,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.10.5, @types/node@npm:^20.14.11":
-  version: 20.16.2
-  resolution: "@types/node@npm:20.16.2"
+"@types/node@npm:^22.5.4":
+  version: 22.5.4
+  resolution: "@types/node@npm:22.5.4"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/74fac185dbd2c6b301cde75747c1cd6c9ca1ad7266147ea107a798837f40b8a05991177ebd7925fc7450d51334096259d186afad6e0d22864b7c97f8afef6ba7
+  checksum: 10c0/b445daa7eecd761ad4d778b882d6ff7bcc3b4baad2086ea9804db7c5d4a4ab0298b00d7f5315fc640a73b5a1d52bbf9628e09c9fec0cf44dbf9b4df674a8717d
   languageName: node
   linkType: hard
 
@@ -2922,7 +2922,7 @@ __metadata:
   dependencies:
     "@swc/cli": "npm:^0.4.0"
     "@swc/core": "npm:^1.7.5"
-    "@types/node": "npm:^20.14.11"
+    "@types/node": "npm:^22.5.4"
     "@types/pnpapi": "npm:^0.0.5"
     "@yarnpkg/fslib": "npm:~3.1.0"
     "@yarnpkg/libzip": "npm:~3.1.0"
