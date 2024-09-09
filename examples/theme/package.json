@@ -17,7 +17,7 @@
     "@example/prettier-config-default": "workspace:*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.18",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.45",
     "postcss-cli": "^11.0.0",
     "postcss-scss": "^4.0.9",
     "postcss-typesafe-css-modules": "^0.3.0",
