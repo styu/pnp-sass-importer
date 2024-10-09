@@ -21,8 +21,5 @@
   },
   "engines": {
     "node": ">=20.9.0"
-  },
-  "resolutions": {
-    "postcss-typesafe-css-modules": "portal:/Users/stephyu/Projects/postcss-typesafe-css-modules"
   }
 }
