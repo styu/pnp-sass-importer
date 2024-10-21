@@ -353,7 +353,7 @@ __metadata:
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.3.0"
+    postcss-typesafe-css-modules: "npm:^2.0.1"
     prettier: "npm:^3.3.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -378,7 +378,7 @@ __metadata:
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.3.0"
+    postcss-typesafe-css-modules: "npm:^2.0.1"
     prettier: "npm:^3.3.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -429,7 +429,7 @@ __metadata:
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.3.0"
+    postcss-typesafe-css-modules: "npm:^2.0.1"
     sass: "npm:^1.77.8"
     typescript: "npm:~5.5.3"
   languageName: unknown
@@ -3070,9 +3070,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-typesafe-css-modules@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "postcss-typesafe-css-modules@npm:0.3.0"
+"postcss-typesafe-css-modules@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "postcss-typesafe-css-modules@npm:2.0.1"
   dependencies:
     fs-extra: "npm:^11.2.0"
     lines-and-columns: "npm:^2.0.4"
@@ -3080,7 +3080,7 @@ __metadata:
     source-map: "npm:^0.7.4"
   peerDependencies:
     postcss: ^8.0.0
-  checksum: 10c0/bee846287ec337675f840154dc041673ec14cdda56ab7a70db1ae364302239439edbe17f02742575455743e98ecad9d36627ef14266894250217db2f7ee88665
+  checksum: 10c0/358ee961fafdd7cfa792a9c44d2023f3cc13cf8e2bd25f6e15385fb5f4f0de57c52467338017a8a18e3db81a1839921ab8203762ddf1976becff911592ec9326
   languageName: node
   linkType: hard
 
