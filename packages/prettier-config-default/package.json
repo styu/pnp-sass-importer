@@ -4,6 +4,6 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "prettier": "^3.3.3"
+    "prettier": "^3.5.3"
   }
 }
