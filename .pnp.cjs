@@ -60,7 +60,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@changesets/cli", "npm:2.29.4"],\
           ["pnp-sass-importer-repo", "workspace:."],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["turbo", "npm:2.5.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
         ],\
@@ -455,7 +455,7 @@ const RAW_RUNTIME_STATE =
           ["postcss-cli", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:11.0.0"],\
           ["postcss-scss", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:4.0.9"],\
           ["postcss-typesafe-css-modules", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:0.3.0"],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.77.8"],\
@@ -482,7 +482,7 @@ const RAW_RUNTIME_STATE =
           ["postcss-cli", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:11.0.0"],\
           ["postcss-scss", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:4.0.9"],\
           ["postcss-typesafe-css-modules", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:0.3.0"],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.77.8"],\
@@ -496,7 +496,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/prettier-config-default/",\
         "packageDependencies": [\
           ["@example/prettier-config-default", "workspace:packages/prettier-config-default"],\
-          ["prettier", "npm:3.3.3"]\
+          ["prettier", "npm:3.5.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -517,7 +517,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["fs-extra", "npm:11.2.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.77.8"],\
@@ -3239,7 +3239,7 @@ const RAW_RUNTIME_STATE =
           ["@yarnpkg/fslib", "npm:3.1.0"],\
           ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["sass", "npm:1.77.8"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
         ],\
@@ -3252,7 +3252,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@changesets/cli", "npm:2.29.4"],\
           ["pnp-sass-importer-repo", "workspace:."],\
-          ["prettier", "npm:3.3.3"],\
+          ["prettier", "npm:3.5.3"],\
           ["turbo", "npm:2.5.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
         ],\
@@ -3560,10 +3560,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.3.3", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.3-e811f023f3/node_modules/prettier/",\
+      ["npm:3.5.3", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.5.3-787132ce04/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.3.3"]\
+          ["prettier", "npm:3.5.3"]\
         ],\
         "linkType": "HARD"\
       }]\
