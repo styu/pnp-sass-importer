@@ -38,8 +38,8 @@
     "sass": "^1.77.8"
   },
   "devDependencies": {
-    "@swc/cli": "^0.4.0",
-    "@swc/core": "^1.7.5",
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "^1.11.29",
     "@types/node": "^22.15.26",
     "@types/pnpapi": "^0.0.5",
     "prettier": "^3.5.3",
