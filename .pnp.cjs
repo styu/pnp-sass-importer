@@ -1439,30 +1439,30 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@yarnpkg/fslib", [\
-      ["npm:3.1.0", {\
-        "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.1.0-821f4faf89-e327aaf73f.zip/node_modules/@yarnpkg/fslib/",\
+      ["npm:3.1.2", {\
+        "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.1.2-f37b5a38a8-fc19a2b62a.zip/node_modules/@yarnpkg/fslib/",\
         "packageDependencies": [\
-          ["@yarnpkg/fslib", "npm:3.1.0"],\
+          ["@yarnpkg/fslib", "npm:3.1.2"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@yarnpkg/libzip", [\
-      ["npm:3.1.0", {\
-        "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.1.0-73edb40bfc-11e12724d9.zip/node_modules/@yarnpkg/libzip/",\
+      ["npm:3.2.1", {\
+        "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.2.1-5bcfe1c424-067b57953f.zip/node_modules/@yarnpkg/libzip/",\
         "packageDependencies": [\
-          ["@yarnpkg/libzip", "npm:3.1.0"]\
+          ["@yarnpkg/libzip", "npm:3.2.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0", {\
-        "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-216f78d359/0/cache/@yarnpkg-libzip-npm-3.1.0-73edb40bfc-11e12724d9.zip/node_modules/@yarnpkg/libzip/",\
+      ["virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.2.1", {\
+        "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-a920bbcec5/0/cache/@yarnpkg-libzip-npm-3.2.1-5bcfe1c424-067b57953f.zip/node_modules/@yarnpkg/libzip/",\
         "packageDependencies": [\
           ["@types/emscripten", "npm:1.39.13"],\
           ["@types/yarnpkg__fslib", null],\
-          ["@yarnpkg/fslib", "npm:3.1.0"],\
-          ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0"],\
+          ["@yarnpkg/fslib", "npm:3.1.2"],\
+          ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.2.1"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "packagePeers": [\
@@ -3608,8 +3608,8 @@ const RAW_RUNTIME_STATE =
           ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
           ["@types/node", "npm:22.15.26"],\
           ["@types/pnpapi", "npm:0.0.5"],\
-          ["@yarnpkg/fslib", "npm:3.1.0"],\
-          ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0"],\
+          ["@yarnpkg/fslib", "npm:3.1.2"],\
+          ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.2.1"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
           ["prettier", "npm:3.5.3"],\
           ["sass", "npm:1.89.0"],\
