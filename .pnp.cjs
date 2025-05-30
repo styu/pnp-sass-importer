@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["pnp-sass-importer-repo", "workspace:."],\
           ["prettier", "npm:3.5.3"],\
           ["turbo", "npm:2.5.3"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -459,7 +459,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.89.0"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -486,7 +486,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.89.0"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -512,7 +512,7 @@ const RAW_RUNTIME_STATE =
           ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.4.0"],\
           ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.7.22"],\
           ["@types/fs-extra", "npm:11.0.4"],\
-          ["@types/node", "npm:20.16.2"],\
+          ["@types/node", "npm:22.15.26"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["fs-extra", "npm:11.2.0"],\
@@ -521,7 +521,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:18.3.1"],\
           ["sass", "npm:1.89.0"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -540,7 +540,7 @@ const RAW_RUNTIME_STATE =
           ["postcss-scss", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:4.0.9"],\
           ["postcss-typesafe-css-modules", "virtual:56428b1689c26f99864ff4c5a2fbb426d09c7b64b6b374270d8cc4658bc45bafdc42e4e48da2a25f85d35c0e5b9b1806f61c7bdb981079b64d593b3507020045#npm:0.3.0"],\
           ["sass", "npm:1.89.0"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1116,11 +1116,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.16.2", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.2-fa541092c6-74fac185db.zip/node_modules/@types/node/",\
+      ["npm:22.15.26", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.15.26-ed672508aa-f864c50025.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.16.2"],\
-          ["undici-types", "npm:6.19.8"]\
+          ["@types/node", "npm:22.15.26"],\
+          ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -3403,14 +3403,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.4.0"],\
           ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.7.22"],\
-          ["@types/node", "npm:20.16.2"],\
+          ["@types/node", "npm:22.15.26"],\
           ["@types/pnpapi", "npm:0.0.5"],\
           ["@yarnpkg/fslib", "npm:3.1.0"],\
           ["@yarnpkg/libzip", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:3.1.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
           ["prettier", "npm:3.5.3"],\
           ["sass", "npm:1.89.0"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -3423,7 +3423,7 @@ const RAW_RUNTIME_STATE =
           ["pnp-sass-importer-repo", "workspace:."],\
           ["prettier", "npm:3.5.3"],\
           ["turbo", "npm:2.5.3"],\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -4629,10 +4629,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["typescript", [\
-      ["patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07", {\
-        "packageLocation": "./.yarn/cache/typescript-patch-fe43cd9db9-73409d7b91.zip/node_modules/typescript/",\
+      ["patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5", {\
+        "packageLocation": "./.yarn/cache/typescript-patch-f64146f279-39117e346f.zip/node_modules/typescript/",\
         "packageDependencies": [\
-          ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4642,6 +4642,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/undici-types-npm-6.19.8-9f12285b7a-078afa5990.zip/node_modules/undici-types/",\
         "packageDependencies": [\
           ["undici-types", "npm:6.19.8"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.21.0", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-6.21.0-eb2b0ed56a-c01ed51829.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
       }]\
