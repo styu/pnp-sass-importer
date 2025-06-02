@@ -515,7 +515,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:22.15.26"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["fs-extra", "npm:11.3.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
           ["prettier", "npm:3.5.3"],\
           ["react", "npm:18.3.1"],\
@@ -2334,6 +2334,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/fs-extra-npm-11.2.0-6783080799-d77a9a9efe.zip/node_modules/fs-extra/",\
         "packageDependencies": [\
           ["fs-extra", "npm:11.2.0"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["jsonfile", "npm:6.1.0"],\
+          ["universalify", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:11.3.0", {\
+        "packageLocation": "./.yarn/cache/fs-extra-npm-11.3.0-a6b1b4d5ad-5f95e99618.zip/node_modules/fs-extra/",\
+        "packageDependencies": [\
+          ["fs-extra", "npm:11.3.0"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["jsonfile", "npm:6.1.0"],\
           ["universalify", "npm:2.0.1"]\
