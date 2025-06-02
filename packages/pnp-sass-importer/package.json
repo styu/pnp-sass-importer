@@ -35,7 +35,7 @@
   "dependencies": {
     "@yarnpkg/fslib": "^3.1.2",
     "@yarnpkg/libzip": "^3.2.1",
-    "sass": "^1.77.8"
+    "sass": "^1.89.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.7",
