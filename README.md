@@ -9,10 +9,13 @@ For example, if you have a Yarn PnP monorepo that has packages `foo-lib` and `ba
 @use "bar-lib/scss/variables.scss" as bar;
 // Out-of-repo dependency
 @use "@blueprintjs/core/lib/scss/variables.scss" as bp;
+// pkg: protocol
+@use "pkg:@example/theme" as theme;
 
 .my-class {
   color: bar.$main-color;
   font-family: bp.$pt-font-family;
+  background: theme.$background-color;
 }
 ```
 
