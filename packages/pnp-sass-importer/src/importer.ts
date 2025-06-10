@@ -3,15 +3,22 @@ import libzip, { ZipOpenFS } from "@yarnpkg/libzip";
 import { Importer } from "sass";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
+import { getValidatedUrl } from "./getValidatedUrl.js";
 
 /**
  *
  * @param dirname The directory from which to resolve the request from
  * @returns
  */
-export default (dirname: string) => {
+export function createImporter(dirname: string): Importer {
   const importer: Importer = {
     canonicalize: async (url, _context) => {
+      const validatedUrl = getValidatedUrl(url);
+
+      if (validatedUrl == null) {
+        return null;
+      }
+
       let pnpapi;
       try {
         // If this plugin is not actually run in a PnP context (e.g. nodeLinker is set to node-modules),
@@ -26,12 +33,12 @@ export default (dirname: string) => {
         const require = createRequire(dirname);
         let res: string | null = null;
         try {
-          res = require.resolve(url, {
+          res = require.resolve(validatedUrl, {
             paths: [dirname],
           });
         } catch (error) {
-          if (!url.endsWith(".scss")) {
-            res = require.resolve(url + ".scss", {
+          if (!validatedUrl.endsWith(".scss")) {
+            res = require.resolve(validatedUrl + ".scss", {
               paths: [dirname],
             });
           }
@@ -44,12 +51,12 @@ export default (dirname: string) => {
 
       let res: string | null = null;
       try {
-        res = pnpapi.resolveRequest(url, dirname);
+        res = pnpapi.resolveRequest(validatedUrl, dirname);
       } catch (error) {
         // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
         // In that case, we can see if the URL is simply missing a .scss extension and try again
         if (!url.toString().endsWith(".scss")) {
-          res = pnpapi.resolveRequest(url + ".scss", dirname);
+          res = pnpapi.resolveRequest(validatedUrl + ".scss", dirname);
         }
       }
       if (res == null) {
@@ -66,4 +73,4 @@ export default (dirname: string) => {
     },
   };
   return importer;
-};
+}
