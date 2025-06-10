@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "vitest run --reporter junit --outputFile build/vitest/results.xml",
-    "lint": "prettier --check 'test/**/*.{ts,scss}*'",
-    "lint-fix": "prettier --write 'test/**/*.{ts,scss}*'",
+    "lint": "prettier --check 'tests/**/*.{ts,scss}*'",
+    "lint-fix": "prettier --write 'tests/**/*.{ts,scss}*'",
     "clean": "rm -rf dist && rm -rf build"
   },
   "dependencies": {
