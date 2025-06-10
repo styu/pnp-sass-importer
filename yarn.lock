@@ -3815,6 +3815,7 @@ __metadata:
     prettier: "npm:^3.5.3"
     turbo: "npm:^2.5.3"
     typescript: "npm:~5.8.3"
+    vitest: "npm:^3.2.3"
   languageName: unknown
   linkType: soft
 
@@ -3829,6 +3830,7 @@ __metadata:
     prettier: "npm:^3.5.3"
     sass: "npm:^1.77.8"
     typescript: "npm:~5.8.3"
+    vitest: "npm:^3.2.3"
   languageName: unknown
   linkType: soft
 

@@ -37,10 +37,15 @@ export function createImporter(dirname: string): Importer {
             paths: [dirname],
           });
         } catch (error) {
-          if (!validatedUrl.endsWith(".scss")) {
-            res = require.resolve(validatedUrl + ".scss", {
-              paths: [dirname],
-            });
+          try {
+            if (!validatedUrl.endsWith(".scss")) {
+              res = require.resolve(validatedUrl + ".scss", {
+                paths: [dirname],
+              });
+            }
+          } catch {
+            // Per https://sass-lang.com/documentation/at-rules/use/#rules-for-a-pkg-importer,
+            // if the file is not found, we should return null to let other importers potentially handle it
           }
         }
         if (res == null) {
@@ -53,10 +58,15 @@ export function createImporter(dirname: string): Importer {
       try {
         res = pnpapi.resolveRequest(validatedUrl, dirname);
       } catch (error) {
-        // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
-        // In that case, we can see if the URL is simply missing a .scss extension and try again
-        if (!url.toString().endsWith(".scss")) {
-          res = pnpapi.resolveRequest(validatedUrl + ".scss", dirname);
+        try {
+          // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
+          // In that case, we can see if the URL is simply missing a .scss extension and try again
+          if (!url.toString().endsWith(".scss")) {
+            res = pnpapi.resolveRequest(validatedUrl + ".scss", dirname);
+          }
+        } catch {
+          // Per https://sass-lang.com/documentation/at-rules/use/#rules-for-a-pkg-importer,
+          // if the file is not found, we should return null to let other importers potentially handle it
         }
       }
       if (res == null) {

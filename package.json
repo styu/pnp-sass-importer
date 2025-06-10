@@ -18,7 +18,8 @@
     "@changesets/cli": "^2.29.4",
     "prettier": "^3.5.3",
     "turbo": "^2.5.3",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.3"
   },
   "engines": {
     "node": ">=22.11.0"

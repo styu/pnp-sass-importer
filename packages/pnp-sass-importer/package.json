@@ -30,6 +30,7 @@
     "build:esm": "rm -rf dist/esm && mkdir -p dist/esm && echo '{ \"type\": \"module\" }' > dist/esm/package.json && tsc -p tsconfig.esm.json --outDir dist/esm",
     "lint": "prettier --check 'src/**/*.{ts,scss}*'",
     "lint-fix": "prettier --write 'src/**/*.{ts,scss}*'",
+    "test": "vitest run --reporter junit --outputFile build/vitest/results.xml",
     "clean": "rm -rf dist && rm -rf build"
   },
   "dependencies": {
@@ -41,7 +42,8 @@
     "@types/node": "^22.15.26",
     "@types/pnpapi": "^0.0.5",
     "prettier": "^3.5.3",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.3"
   },
   "files": [
     "dist",

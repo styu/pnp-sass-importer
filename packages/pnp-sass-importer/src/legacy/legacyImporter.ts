@@ -24,10 +24,14 @@ export function legacyImporter(dirname: string): LegacyImporter {
         try {
           res = pnpapi.resolveRequest(validatedUrl, dirname);
         } catch (error) {
-          // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
-          // In that case, we can see if the URL is simply missing a .scss extension and try again
-          if (!validatedUrl.endsWith(".scss")) {
-            res = pnpapi.resolveRequest(validatedUrl + ".scss", dirname);
+          try {
+            // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
+            // In that case, we can see if the URL is simply missing a .scss extension and try again
+            if (!validatedUrl.endsWith(".scss")) {
+              res = pnpapi.resolveRequest(validatedUrl + ".scss", dirname);
+            }
+          } catch {
+            // fall through
           }
         }
         if (res == null) {
@@ -48,14 +52,20 @@ export function legacyImporter(dirname: string): LegacyImporter {
             }),
           });
         } catch (error) {
-          // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
-          // In that case, we can see if the URL is simply missing a .scss extension and try again
-          if (!validatedUrl.endsWith(".scss")) {
-            done({
-              file: require.resolve(validatedUrl + ".scss", {
-                paths: [dirname],
-              }),
-            });
+          try {
+            // It's possible the package's exports weren't set up correctly and this URL is attempting to reach into the package nonetheless
+            // In that case, we can see if the URL is simply missing a .scss extension and try again
+            if (!validatedUrl.endsWith(".scss")) {
+              done({
+                file: require.resolve(validatedUrl + ".scss", {
+                  paths: [dirname],
+                }),
+              });
+            }
+          } catch {
+            // fall through
+            // Per https://sass-lang.com/documentation/at-rules/use/#rules-for-a-pkg-importer,
+            // if the file is not found, we should return null to let other importers potentially handle it
           }
         }
       });
