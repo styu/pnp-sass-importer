@@ -3822,8 +3822,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "pnp-sass-importer@workspace:packages/pnp-sass-importer"
   dependencies:
-    "@swc/cli": "npm:^0.7.7"
-    "@swc/core": "npm:^1.11.29"
     "@types/node": "npm:^22.15.26"
     "@types/pnpapi": "npm:^0.0.5"
     "@yarnpkg/fslib": "npm:^3.1.2"

@@ -697,8 +697,8 @@ const RAW_RUNTIME_STATE =
           ["@example/postcss", "workspace:examples/postcss-example"],\
           ["@example/prettier-config-default", "workspace:packages/prettier-config-default"],\
           ["@example/theme", "workspace:examples/theme"],\
-          ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7"],\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
+          ["@swc/cli", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:0.7.7"],\
+          ["@swc/core", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
@@ -724,8 +724,8 @@ const RAW_RUNTIME_STATE =
           ["@example/postcss-cjs", "workspace:examples/postcss-cjs-example"],\
           ["@example/prettier-config-default", "workspace:packages/prettier-config-default"],\
           ["@example/theme", "workspace:examples/theme"],\
-          ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7"],\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
+          ["@swc/cli", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:0.7.7"],\
+          ["@swc/core", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["pnp-sass-importer", "workspace:packages/pnp-sass-importer"],\
@@ -760,8 +760,8 @@ const RAW_RUNTIME_STATE =
           ["@example/prettier-config-default", "workspace:packages/prettier-config-default"],\
           ["@example/sass", "workspace:examples/sass-example"],\
           ["@example/theme", "workspace:examples/theme"],\
-          ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7"],\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
+          ["@swc/cli", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:0.7.7"],\
+          ["@swc/core", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29"],\
           ["@types/fs-extra", "npm:11.0.4"],\
           ["@types/node", "npm:22.15.26"],\
           ["@types/react", "npm:18.3.5"],\
@@ -1458,11 +1458,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7", {\
-        "packageLocation": "./.yarn/__virtual__/@swc-cli-virtual-4a506b89d7/0/cache/@swc-cli-npm-0.7.7-717dc6d896-fc66fc7c98.zip/node_modules/@swc/cli/",\
+      ["virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:0.7.7", {\
+        "packageLocation": "./.yarn/__virtual__/@swc-cli-virtual-3c0e00dd57/0/cache/@swc-cli-npm-0.7.7-717dc6d896-fc66fc7c98.zip/node_modules/@swc/cli/",\
         "packageDependencies": [\
-          ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7"],\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
+          ["@swc/cli", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:0.7.7"],\
+          ["@swc/core", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29"],\
           ["@swc/counter", "npm:0.1.3"],\
           ["@types/chokidar", null],\
           ["@types/swc__core", null],\
@@ -1487,16 +1487,16 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@swc/core", [\
       ["npm:1.11.29", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-7e37ab31df/node_modules/@swc/core/",\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-c7ffacaa1e/node_modules/@swc/core/",\
         "packageDependencies": [\
           ["@swc/core", "npm:1.11.29"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-7e37ab31df/node_modules/@swc/core/",\
+      ["virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-c7ffacaa1e/node_modules/@swc/core/",\
         "packageDependencies": [\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
+          ["@swc/core", "virtual:e4e6ce12f847dbca47084c17125fae007b43dec709e451562d811c42a1ca2d4c3b9ba32a2cabd5ccaf5263f8d921f64ab2e9189a916c8a73ef87b4a72e736aa0#npm:1.11.29"],\
           ["@swc/core-darwin-arm64", "npm:1.11.29"],\
           ["@swc/core-darwin-x64", "npm:1.11.29"],\
           ["@swc/core-linux-arm-gnueabihf", "npm:1.11.29"],\
@@ -4373,8 +4373,6 @@ const RAW_RUNTIME_STATE =
       ["workspace:packages/pnp-sass-importer", {\
         "packageLocation": "./packages/pnp-sass-importer/",\
         "packageDependencies": [\
-          ["@swc/cli", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:0.7.7"],\
-          ["@swc/core", "virtual:e3fb089c4093a147e579bdb04c86b7ad6c339668ee3f1ecb5f661f690141c42f9f7b6f13aa240a7140699a312ed876f6be996234688882bda3c1db1f82108cfc#npm:1.11.29"],\
           ["@types/node", "npm:22.15.26"],\
           ["@types/pnpapi", "npm:0.0.5"],\
           ["@yarnpkg/fslib", "npm:3.1.2"],\
