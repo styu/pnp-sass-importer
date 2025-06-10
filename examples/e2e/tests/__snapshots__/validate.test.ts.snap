@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`validate output > postcss-cjs-example > should interpret pkg: protocol correctly 1`] = `
+"._button_1pjng_1 {
+  color: #ff0000;
+}"
+`;
+
+exports[`validate output > postcss-cjs-example > should interpret relative paths and node_modules imports correctly 1`] = `
+"/*
+ * Copyright 2023 Palantir Technologies, Inc. All rights reserved.
+ */
+._header_6tek9_4 {
+  color: #ff0000;
+  display: flex;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "blueprint-icons-16", sans-serif;
+  justify-content: space-between;
+  max-width: 800px;
+}"
+`;
+
+exports[`validate output > postcss-example > should interpret pkg: protocol correctly 1`] = `
+"._button_1pjng_1 {
+  color: #ff0000;
+}"
+`;
+
+exports[`validate output > postcss-example > should interpret relative paths and node_modules imports correctly 1`] = `
+"/*
+ * Copyright 2023 Palantir Technologies, Inc. All rights reserved.
+ */
+._header_6tek9_4 {
+  color: #ff0000;
+  display: flex;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "blueprint-icons-16", sans-serif;
+  justify-content: space-between;
+  max-width: 800px;
+}"
+`;
+
+exports[`validate output > sass-example > should interpret pkg: protocol correctly 1`] = `
+".button {
+  color: #ff0000;
+}"
+`;
+
+exports[`validate output > sass-example > should interpret relative paths and node_modules imports correctly 1`] = `
+"/*
+ * Copyright 2023 Palantir Technologies, Inc. All rights reserved.
+ */
+.header {
+  color: #ff0000;
+  display: flex;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "blueprint-icons-16", sans-serif;
+  justify-content: space-between;
+  max-width: 800px;
+}"
+`;

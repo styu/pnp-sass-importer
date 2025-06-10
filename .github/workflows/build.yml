@@ -42,5 +42,5 @@ jobs:
         run: yarn install --immutable
       - name: Check yarn.lock is deduplicated
         run: yarn dedupe --check
-      - name: Run prettier
-        run: yarn lint
+      - name: Run prettier and tests
+        run: yarn lint test

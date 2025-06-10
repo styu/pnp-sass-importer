@@ -8,6 +8,9 @@
     ".": {
       "types": "./dist/types/index.d.ts",
       "default": "./dist/main/index.js"
+    },
+    "./css/*.css": {
+      "default": "./build/css/*.css"
     }
   },
   "scripts": {
