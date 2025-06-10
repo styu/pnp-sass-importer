@@ -44,7 +44,7 @@
     "fs-extra": "^11.2.0",
     "pnp-sass-importer": "workspace:*",
     "prettier": "^3.5.3",
-    "sass": "^1.89.0",
+    "sass": "^1.89.2",
     "typescript": "~5.8.3"
   }
 }
