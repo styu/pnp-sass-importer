@@ -1,0 +1,28 @@
+{
+  "name": "@example/e2e",
+  "description": "E2E tests that validate the output of all the example projects",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter junit --outputFile build/vitest/results.xml",
+    "lint": "prettier --check 'tests/**/*.{ts,scss}*'",
+    "lint-fix": "prettier --write 'tests/**/*.{ts,scss}*'",
+    "clean": "rm -rf dist && rm -rf build"
+  },
+  "dependencies": {
+    "@example/postcss": "workspace:*",
+    "@example/postcss-cjs": "workspace:*",
+    "@example/sass": "workspace:*"
+  },
+  "devDependencies": {
+    "@example/prettier-config-default": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.26",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.18",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.3"
+  }
+}

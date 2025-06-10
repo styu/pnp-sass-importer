@@ -11,13 +11,15 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "lint-fix": "turbo run lint-fix",
+    "test": "turbo run test",
     "clean": "turbo run clean"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
     "prettier": "^3.5.3",
     "turbo": "^2.5.3",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.3"
   },
   "engines": {
     "node": ">=22.11.0"

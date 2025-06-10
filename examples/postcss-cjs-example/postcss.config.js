@@ -1,4 +1,4 @@
-const { legacyImporter } = require("pnp-sass-importer/legacy");
+const legacyImporter = require("pnp-sass-importer/legacy");
 
 module.exports = {
     syntax: require("postcss-scss"),

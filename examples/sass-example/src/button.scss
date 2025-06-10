@@ -1,0 +1,5 @@
+@use "pkg:@example/theme" as theme;
+
+.button {
+  color: theme.$secondary-color;
+}

@@ -25,9 +25,17 @@
       "outputs": ["build/css/**"],
       "dependsOn": ["^build"]
     },
+    "build:cjs": {
+      "outputs": ["dist/cjs/**"]
+    },
+    "build:esm": {
+      "outputs": ["dist/esm/**"]
+    },
     "build": {
       "dependsOn": [
         "^build",
+        "build:cjs",
+        "build:esm",
         "assemble-prepare",
         "assemble-css-main",
         "assemble-postcss-main",
@@ -80,6 +88,10 @@
       "cache": false,
       "persistent": true,
       "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["build/vitest/**"]
     }
   }
 }
