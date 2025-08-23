@@ -46,7 +46,7 @@
     "postcss-scss": "^4.0.9",
     "postcss-typesafe-css-modules": "^0.3.0",
     "prettier": "^3.5.3",
-    "sass": "^1.89.0",
+    "sass": "^1.89.2",
     "typescript": "~5.8.3"
   }
 }
